@@ -1,17 +1,15 @@
-﻿
 #include <iostream>
 using namespace std;
 int main()
 {
-	double** a, S;
-
-	int i, j, n;
+	int **a, S;
+ int i, j, n;
 	S = 1;
 	cout << " Input size N : " << endl;
 	cin >> n;
-		a = new double* [n];
+		a = new int *[n];
 		for (i = 0; i < n; i++)
-			a[i] = new double[n]; 
+			a[i] = new int[n]; 
 		cout << "Input massive A : " << endl;
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n; j++) 
@@ -20,5 +18,6 @@ int main()
 			for (i = 0; i < n; i++)
 			if (i+j < n-1) S *= a[i][j];
 	cout << "proizvedenie ravno :" << S << endl;
-	delete[]a;
+	for (int i = 0; i < n; i++);
+	delete[] a;
 }
