@@ -19,5 +19,6 @@ int main()
 			if (i+j < n-1) S *= a[i][j];
 	cout << "proizvedenie ravno :" << S << endl;
 	for (int i = 0; i < n; i++);
+        belete[] a[i];
 	delete[] a;
 }
